@@ -43,6 +43,9 @@
       <name>Waypoints</name>
       <Placemark>
         <name>29-Sep 2:09p</name>
+        <description><![CDATA[
+          <img src="https://joseherminiocollas.github.io/path_coop_towpath/DSCN0048.JPG" width="300"/><br/>
+        ]]></description>
         <TimeStamp>
           <when>2025-09-29T18:09:35Z</when>
         </TimeStamp>
