@@ -1,10 +1,13 @@
-<?xml version="1.0"?>
-<gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://www.delorme.com" xmlns="http://www.topografix.com/GPX/1/1">
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="example" xmlns="http://www.topografix.com/GPX/1/1">
   <wpt lat="41.489762" lon="-81.701457">
-    <ele>171.400</ele>
     <time>2025-09-29T18:09:35Z</time>
     <name>29-Sep 2:09p</name>
-    <desc />
+    <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0048.JPG">
+      <text>Photo</text>
+      <type>image/jpeg</type>
+    </link>
+    <desc><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0048.JPG" width="300"/>]]></desc>
   </wpt>
   <wpt lat="41.489841" lon="-81.701695">
     <ele>170.400</ele>
