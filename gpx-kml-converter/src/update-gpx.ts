@@ -61,13 +61,14 @@ async function main() {
   let assigned = 0;
   for (let i = 0; i < wpts.length && i < images.length; i++) {
     const w = wpts[i];
-    const hasLink = !!w.link;
-    const hasImageDesc = !!(w.desc && ((typeof w.desc === "object" && w.desc.__cdata) || (typeof w.desc === "string" && w.desc.trim())));
-    if (hasLink || hasImageDesc) {
-      continue;
-    }
+    // const hasLink = !!w.link;
+    // const hasImageDesc = !!(w.desc && ((typeof w.desc === "object" && w.desc.__cdata) || (typeof w.desc === "string" && w.desc.trim())));
+    // if (hasLink || hasImageDesc) {
+    //   continue;
+    // }
+    const absPath = 'https://joseherminiocollas.github.io/path_coop_towpath/images'
     const imgName = images[i];
-    const rel = path.posix.join("images", imgName);
+    const rel = absPath + imgName;
     w.link = { "@_href": rel };
     w.desc = { "__cdata": `<img src="${rel}" width="800"/>` };
     assigned++;
