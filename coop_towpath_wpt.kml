@@ -1,550 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
-  <Document>
-    <name>GPS device</name>
-    <snippet>Created Mon Oct 20 15:27:28 2025 GMT</snippet>
-    <LookAt>
-      <gx:TimeSpan>
-        <begin>2025-09-29T18:09:35Z</begin>
-        <end>2025-09-29T19:02:30Z</end>
-      </gx:TimeSpan>
-      <longitude>-81.689465</longitude>
-      <latitude>41.473737</latitude>
-      <range>5362.679583</range>
-    </LookAt>
-    <!-- Normal waypoint style -->
-    <Style id="waypoint_n">
-      <IconStyle>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <!-- Highlighted waypoint style -->
-    <Style id="waypoint_h">
-      <IconStyle>
-        <scale>1.2</scale>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/pal4/icon61.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <StyleMap id="waypoint">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#waypoint_n</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#waypoint_h</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Folder>
-      <name>Waypoints</name>
-      <Placemark>
-        <name>29-Sep 2:09p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0048.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:09:35Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.701457,41.489762</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:11p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0049.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:11:01Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.701695,41.489841,170.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:11p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0050.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:11:52Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.701614,41.489211,170.60</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:13p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0051.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:13:20Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.700565,41.489044,183.60</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:14p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0052.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:14:47Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.700582,41.487800,170.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:16p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0053.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:16:21Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.699759,41.487805,185.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:17p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0054.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:17:45Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.698277,41.488334,183.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:18p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0055.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:18:50Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.696376,41.488307,184.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:20p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0056.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:20:08Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.695091,41.487690,191.20</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:21p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0057.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:21:25Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.693590,41.486618,182.20</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:22p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0058.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:22:45Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.692316,41.486031,184.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:22p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0059.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:22:53Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.692316,41.486031,184.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:25p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0060.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:25:51Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.690778,41.484559,200.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:27p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0061.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:27:08Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.690432,41.485054,202.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:29p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0062.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:29:22Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.687831,41.484636,200.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:30p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0063.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:30:28Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686986,41.484506,200.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:31p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0064.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:31:51Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.684008,41.484593,191.20</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:32p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0065.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:32:47Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.683134,41.484447,191.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:32p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0066.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:32:53Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.683134,41.484447,191.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:32p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0067.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:32:58Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.683134,41.484447,191.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:34p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0068.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:34:58Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.681380,41.482573,192.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:36p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0069.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:36:15Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.679051,41.480619,181.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:37p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0070.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:37:33Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.677250,41.478176,178.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:39p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0071.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:39:39Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.677236,41.476869,190.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:41p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0072.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:41:14Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.678215,41.475890,193.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:41p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0073.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:41:21Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.678215,41.475890,193.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:41p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0074.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:41:56Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.677981,41.475653,194.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:42p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0075.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:42:50Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.678181,41.475728,193.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:43p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0076.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:43:43Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.678557,41.475182,189.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:44p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0077.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:44:42Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.681132,41.474866,180.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:45p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0078.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:45:38Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.681963,41.475690,175.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:47p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0079.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:47:30Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.685903,41.474982,176.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:49p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0080.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:49:00Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.687979,41.474187,178.20</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:50p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0081.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:50:47Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.688111,41.471845,180.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:52p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0082.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:52:07Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686632,41.470704,181.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:52p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0083.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:52:11Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686632,41.470704,181.40</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:53p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0084.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:53:50Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686532,41.469124,188.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:55p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0085.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:55:18Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686429,41.467021,183.00</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:56p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0086.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:56:13Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.686831,41.466045,179.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:57p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0087.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:57:21Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.685659,41.465255,180.80</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 2:59p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0088.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T18:59:19Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.687141,41.462641,177.20</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>29-Sep 3:02p</name>
-        <snippet/>
-        <description>https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0089.JPG</description>
-        <TimeStamp>
-          <when>2025-09-29T19:02:30Z</when>
-        </TimeStamp>
-        <styleUrl>#waypoint</styleUrl>
-        <Point>
-          <coordinates>-81.688180,41.457633,182.40</coordinates>
-        </Point>
-      </Placemark>
-    </Folder>
-  </Document>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>coop_towpath_wpt.kml</name>
+<Placemark>
+<name>29-Sep 2:09p</name>
+<TimeStamp><when>2025-09-29T18:09:35Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0048.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.701457,41.489762</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:11p</name>
+<TimeStamp><when>2025-09-29T18:11:01Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0049.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.701695,41.489841,170.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:11p</name>
+<TimeStamp><when>2025-09-29T18:11:52Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0050.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.701614,41.489211,170.599</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:13p</name>
+<TimeStamp><when>2025-09-29T18:13:20Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0051.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.700565,41.489044,183.599</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:14p</name>
+<TimeStamp><when>2025-09-29T18:14:47Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0052.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.700582,41.487800,170.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:16p</name>
+<TimeStamp><when>2025-09-29T18:16:21Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0053.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.699759,41.487805,185.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:17p</name>
+<TimeStamp><when>2025-09-29T18:17:45Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0054.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.698277,41.488334,183.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:18p</name>
+<TimeStamp><when>2025-09-29T18:18:50Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0055.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.696376,41.488307,184.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:20p</name>
+<TimeStamp><when>2025-09-29T18:20:08Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0056.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.695091,41.487690,191.200</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:21p</name>
+<TimeStamp><when>2025-09-29T18:21:25Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0057.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.693590,41.486618,182.200</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:22p</name>
+<TimeStamp><when>2025-09-29T18:22:45Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0058.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.692316,41.486031,184.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:22p</name>
+<TimeStamp><when>2025-09-29T18:22:53Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0059.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.692316,41.486031,184.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:25p</name>
+<TimeStamp><when>2025-09-29T18:25:51Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0060.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.690778,41.484559,200.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:27p</name>
+<TimeStamp><when>2025-09-29T18:27:08Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0061.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.690432,41.485054,202.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:29p</name>
+<TimeStamp><when>2025-09-29T18:29:22Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0062.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.687831,41.484636,200.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:30p</name>
+<TimeStamp><when>2025-09-29T18:30:28Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0063.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686986,41.484506,200.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:31p</name>
+<TimeStamp><when>2025-09-29T18:31:51Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0064.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.684008,41.484593,191.200</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:32p</name>
+<TimeStamp><when>2025-09-29T18:32:47Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0065.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.683134,41.484447,191.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:32p</name>
+<TimeStamp><when>2025-09-29T18:32:53Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0066.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.683134,41.484447,191.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:32p</name>
+<TimeStamp><when>2025-09-29T18:32:58Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0067.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.683134,41.484447,191.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:34p</name>
+<TimeStamp><when>2025-09-29T18:34:58Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0068.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.681380,41.482573,192.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:36p</name>
+<TimeStamp><when>2025-09-29T18:36:15Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0069.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.679051,41.480619,181.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:37p</name>
+<TimeStamp><when>2025-09-29T18:37:33Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0070.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.677250,41.478176,178.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:39p</name>
+<TimeStamp><when>2025-09-29T18:39:39Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0071.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.677236,41.476869,190.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:41p</name>
+<TimeStamp><when>2025-09-29T18:41:14Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0072.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.678215,41.475890,193.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:41p</name>
+<TimeStamp><when>2025-09-29T18:41:21Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0073.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.678215,41.475890,193.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:41p</name>
+<TimeStamp><when>2025-09-29T18:41:56Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0074.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.677981,41.475653,194.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:42p</name>
+<TimeStamp><when>2025-09-29T18:42:50Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0075.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.678181,41.475728,193.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:43p</name>
+<TimeStamp><when>2025-09-29T18:43:43Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0076.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.678557,41.475182,189.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:44p</name>
+<TimeStamp><when>2025-09-29T18:44:42Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0077.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.681132,41.474866,180.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:45p</name>
+<TimeStamp><when>2025-09-29T18:45:38Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0078.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.681963,41.475690,175.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:47p</name>
+<TimeStamp><when>2025-09-29T18:47:30Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0079.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.685903,41.474982,176.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:49p</name>
+<TimeStamp><when>2025-09-29T18:49:00Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0080.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.687979,41.474187,178.200</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:50p</name>
+<TimeStamp><when>2025-09-29T18:50:47Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0081.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.688111,41.471845,180.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:52p</name>
+<TimeStamp><when>2025-09-29T18:52:07Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0082.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686632,41.470704,181.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:52p</name>
+<TimeStamp><when>2025-09-29T18:52:11Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0083.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686632,41.470704,181.400</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:53p</name>
+<TimeStamp><when>2025-09-29T18:53:50Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0084.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686532,41.469124,188.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:55p</name>
+<TimeStamp><when>2025-09-29T18:55:18Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0085.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686429,41.467021,183.000</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:56p</name>
+<TimeStamp><when>2025-09-29T18:56:13Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0086.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.686831,41.466045,179.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:57p</name>
+<TimeStamp><when>2025-09-29T18:57:21Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0087.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.685659,41.465255,180.799</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 2:59p</name>
+<TimeStamp><when>2025-09-29T18:59:19Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0088.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.687141,41.462641,177.200</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>29-Sep 3:02p</name>
+<TimeStamp><when>2025-09-29T19:02:30Z</when></TimeStamp>
+<description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0089.JPG" width="800"/>]]></description>
+<Point><coordinates>-81.688180,41.457633,182.400</coordinates></Point>
+</Placemark>
+</Document>
 </kml>
