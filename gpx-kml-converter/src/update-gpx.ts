@@ -66,7 +66,7 @@ async function main() {
     // if (hasLink || hasImageDesc) {
     //   continue;
     // }
-    const absPath = 'https://joseherminiocollas.github.io/path_coop_towpath/images'
+    const absPath = 'https://joseherminiocollas.github.io/path_coop_towpath/images/'
     const imgName = images[i];
     const rel = absPath + imgName;
     w.link = { "@_href": rel };
