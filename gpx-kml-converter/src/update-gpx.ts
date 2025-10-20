@@ -70,7 +70,7 @@ async function main() {
     const imgName = images[i];
     const rel = absPath + imgName;
     w.link = { "@_href": rel };
-    w.desc = { "__cdata": `<img src="${rel}" width="800"/>` };
+    w.desc = { "__cdata": `<img src="${rel}" width="309"/>` };
     assigned++;
     console.log(`Assigned image ${imgName} → waypoint[${i}]`);
   }
