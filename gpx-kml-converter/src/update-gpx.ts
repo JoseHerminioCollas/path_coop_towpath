@@ -32,7 +32,6 @@ async function main() {
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
     cdataPropName: "__cdata",
-    ignoreNameSpace: true,
     parseTagValue: false
   });
 
