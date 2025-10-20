@@ -60,7 +60,7 @@ async function main() {
   // parse IMAGE_COUNTS env var (JSON like "[1,2,3]" or CSV "1,2,3")
   const countsEnv = process.env.IMAGE_COUNTS;
   let counts: number[] | null = null;
-  counts = [1, 2, 1, 1, 1, 1, 2, 1,1,1,2];
+  counts = [1, 2, 1, 1, 1, 1, 2, 1,2,1,1,2];
   // if (countsEnv) {
   //   try {
   //     if (countsEnv.trim().startsWith("[")) {
