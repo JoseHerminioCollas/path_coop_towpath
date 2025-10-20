@@ -8,7 +8,7 @@ if [ ! -d "node_modules" ]; then
   npm install
 fi
 
-npx tsx src/update-gpx.ts
+npx tsx src/update-gpx-2.ts
 # gpsbabel -i gpx -f coop_towpath_wpt.gpx -o kml -F coop_towpath_wpt.kml 
 npx tsx src/convert-gpx-to-kml.ts
 echo "1) Update GPX with image <link> and <desc> tags"
