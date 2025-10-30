@@ -2,7 +2,7 @@
   "name": "gpx-kml-converter",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "npx ts-node --esm src/update-gpx.ts",
     "convert": "npx ts-node --esm src/convert-gpx-to-kml.ts",

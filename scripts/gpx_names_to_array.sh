@@ -1,0 +1,1 @@
+ npx ts-node src/gpx-names-to-array.ts 
