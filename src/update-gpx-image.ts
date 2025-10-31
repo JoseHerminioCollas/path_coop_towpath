@@ -60,7 +60,7 @@ async function main() {
   // parse IMAGE_COUNTS env var (JSON like "[1,2,3]" or CSV "1,2,3")
   const countsEnv = process.env.IMAGE_COUNTS;
   let counts: number[] | null = null;
-  1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3,
+  // 1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3,
   const gpxPoints = [
     [
       "29-Sep 2:09p",
