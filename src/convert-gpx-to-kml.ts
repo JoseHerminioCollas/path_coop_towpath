@@ -2,8 +2,8 @@ import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { XMLParser } from "fast-xml-parser";
 
-const DEFAULT_GPX = path.resolve(process.cwd(), "../coop_towpath_wpt.gpx");
-const OUTPUT_KML = path.resolve(process.cwd(), "../coop_towpath_wpt.kml");
+const DEFAULT_GPX = path.resolve(process.cwd(), "coop_towpath_wpt-30.gpx");
+const OUTPUT_KML = path.resolve(process.cwd(), "coop_towpath_wpt-30.kml");
 
 function ensureArray<T>(v: T | T[] | undefined): T[] {
   if (v === undefined) return [];
@@ -19,7 +19,7 @@ async function main() {
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
     cdataPropName: "__cdata",
-    ignoreNameSpace: true,
+    // ignoreNameSpace: true,
     parseTagValue: false
   });
   const obj: any = parser.parse(xml);
