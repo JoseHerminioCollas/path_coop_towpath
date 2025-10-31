@@ -3,7 +3,8 @@ import { readFile, writeFile, readdir, stat } from "fs/promises";
 import path from "path";
 import { XMLParser, XMLBuilder } from "fast-xml-parser";
 
-const DEFAULT_GPX = path.resolve(process.cwd(), "../coop_towpath_wpt.gpx");
+// const DEFAULT_GPX = path.resolve(process.cwd(), "../coop_towpath_wpt.gpx");
+const [,, gpxPath, imagePath, outputPath] = process.argv;
 
 function ensureArray<T>(v: T | T[] | undefined): T[] {
   if (v === undefined) return [];
@@ -20,7 +21,7 @@ async function fileExists(p: string) {
 }
 
 async function main() {
-  const gpxPath = process.env.GPX_FILE ?? DEFAULT_GPX;
+  // const gpxPath = process.env.GPX_FILE ?? DEFAULT_GPX;
   console.log(`Using GPX: ${gpxPath}`);
   if (!(await fileExists(gpxPath))) {
     console.error("GPX file not found:", gpxPath);
@@ -45,7 +46,7 @@ async function main() {
   const wpts = ensureArray(obj.gpx.wpt);
 
   // images folder next to the GPX file
-  const imagesDir = path.resolve(path.dirname(gpxPath), "images");
+  const imagesDir = path.resolve(imagePath);
   const imagesExist = await fileExists(imagesDir);
   let images: string[] = [];
   if (imagesExist) {
@@ -59,151 +60,160 @@ async function main() {
 
   // parse IMAGE_COUNTS env var (JSON like "[1,2,3]" or CSV "1,2,3")
   const countsEnv = process.env.IMAGE_COUNTS;
-  let counts: number[] | null = null;
+  // let counts: number[] | null = null;
   // 1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3,
-  const gpxPoints = [
-    [
-      "29-Sep 2:09p",
-      1
-    ],
-    [
-      "29-Sep 2:11p",
-      2
-    ],
-    [
-      "29-Sep 2:13p",
-      1
-    ],
-    [
-      "29-Sep 2:14p",
-      1
-    ],
-    [
-      "29-Sep 2:16p",
-      1
-    ],
-    [
-      "29-Sep 2:17p",
-      1
-    ],
-    [
-      "29-Sep 2:18p",
-      1
-    ],
-    [
-      "29-Sep 2:20p",
-      1
-    ],
-    [
-      "29-Sep 2:21p",
-      1
-    ],
-    [
-      "29-Sep 2:22p",
-      1
-    ],
-    [
-      "29-Sep 2:25p",
-      1
-    ],
-    [
-      "29-Sep 2:27p",
-      1
-    ],
-    [
-      "29-Sep 2:29p",
-      1
-    ],
-    [
-      "29-Sep 2:30p",
-      1
-    ],
-    [
-      "29-Sep 2:31p",
-      1
-    ],
-    [
-      "29-Sep 2:32p",
-      3
-    ],
-    [
-      "29-Sep 2:34p",
-      1
-    ],
-    [
-      "29-Sep 2:36p",
-      1
-    ],
-    [
-      "29-Sep 2:37p",
-      1
-    ],
-    [
-      "29-Sep 2:39p",
-      1
-    ],
-    [
-      "29-Sep 2:41p",
-      3
-    ],
-    [
-      "29-Sep 2:42p",
-      1
-    ],
-    [
-      "29-Sep 2:43p",
-      1
-    ],
-    [
-      "29-Sep 2:44p",
-      1
-    ],
-    [
-      "29-Sep 2:45p",
-      1
-    ],
-    [
-      "29-Sep 2:47p",
-      1
-    ],
-    [
-      "29-Sep 2:49p",
-      1
-    ],
-    [
-      "29-Sep 2:50p",
-      1
-    ],
-    [
-      "29-Sep 2:52p",
-      2
-    ],
-    [
-      "29-Sep 2:53p",
-      1
-    ],
-    [
-      "29-Sep 2:55p",
-      1
-    ],
-    [
-      "29-Sep 2:56p",
-      1
-    ],
-    [
-      "29-Sep 2:57p",
-      1
-    ],
-    [
-      "29-Sep 2:59p",
-      1
-    ],
-    [
-      "29-Sep 3:02p",
-      1
-    ]
-  ];
-  counts = [1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,];
+  const gpxPoints: Array<[string, number]> = [
+  [
+    "2025-09-29T18:09:35Z",
+    1
+  ],
+  [
+    "2025-09-29T18:11:01Z",
+    1
+  ],
+  [
+    "2025-09-29T18:11:52Z",
+    1
+  ],
+  [
+    "2025-09-29T18:13:20Z",
+    1
+  ],
+  [
+    "2025-09-29T18:14:47Z",
+    1
+  ],
+  [
+    "2025-09-29T18:16:21Z",
+    1
+  ],
+  [
+    "2025-09-29T18:17:45Z",
+    1
+  ],
+  [
+    "2025-09-29T18:18:50Z",
+    1
+  ],
+  [
+    "2025-09-29T18:20:08Z",
+    1
+  ],
+  [
+    "2025-09-29T18:21:25Z",
+    1
+  ],
+  [
+    "2025-09-29T18:22:45Z",
+    1
+  ],
+  [
+    "2025-09-29T18:25:51Z",
+    1
+  ],
+  [
+    "2025-09-29T18:27:08Z",
+    1
+  ],
+  [
+    "2025-09-29T18:29:22Z",
+    1
+  ],
+  [
+    "2025-09-29T18:30:28Z",
+    1
+  ],
+  [
+    "2025-09-29T18:31:51Z",
+    1
+  ],
+  [
+    "2025-09-29T18:32:47Z",
+    1
+  ],
+  [
+    "2025-09-29T18:34:58Z",
+    1
+  ],
+  [
+    "2025-09-29T18:36:15Z",
+    1
+  ],
+  [
+    "2025-09-29T18:37:33Z",
+    1
+  ],
+  [
+    "2025-09-29T18:39:39Z",
+    1
+  ],
+  [
+    "2025-09-29T18:41:14Z",
+    1
+  ],
+  [
+    "2025-09-29T18:41:56Z",
+    1
+  ],
+  [
+    "2025-09-29T18:42:50Z",
+    1
+  ],
+  [
+    "2025-09-29T18:43:43Z",
+    1
+  ],
+  [
+    "2025-09-29T18:44:42Z",
+    1
+  ],
+  [
+    "2025-09-29T18:45:38Z",
+    1
+  ],
+  [
+    "2025-09-29T18:47:30Z",
+    1
+  ],
+  [
+    "2025-09-29T18:49:00Z",
+    1
+  ],
+  [
+    "2025-09-29T18:50:47Z",
+    1
+  ],
+  [
+    "2025-09-29T18:52:07Z",
+    1
+  ],
+  [
+    "2025-09-29T18:53:50Z",
+    1
+  ],
+  [
+    "2025-09-29T18:55:18Z",
+    1
+  ],
+  [
+    "2025-09-29T18:56:13Z",
+    1
+  ],
+  [
+    "2025-09-29T18:57:21Z",
+    1
+  ],
+  [
+    "2025-09-29T18:59:19Z",
+    1
+  ],
+  [
+    "2025-09-29T19:02:30Z",
+    1
+  ]
+];
+const counts = gpxPoints.map(p => p[1]);
+  // counts = [1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,];
   //2:22
   // how many images per waypoint
   // const a = [['2:22', 1]]
@@ -281,13 +291,12 @@ async function main() {
   const newXml = '<?xml version="1.0" encoding="UTF-8"?>\n' + builder.build(obj);
 
   // backup and write
-  await writeFile(gpxPath + ".bak", xml, "utf8");
-  await writeFile(gpxPath, newXml, "utf8");
-  console.log(`Updated GPX written (backup at ${gpxPath}.bak).`);
+  // await writeFile(gpxPath + ".bak", xml, "utf8");
+  await writeFile(outputPath, newXml, "utf8");
+  console.log(`Updated GPX written (${outputPath}).`);
 }
 
 main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-// ...existing code...

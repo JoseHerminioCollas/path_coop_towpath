@@ -5,9 +5,10 @@ import path from "path";
 import { XMLParser } from "fast-xml-parser";
 import { writeFile } from 'fs/promises';
 let outputData = '[1, 2, 3]'; // Example data to write to file]';
-const outputPath = './gpx_array.json'; // You can change the filename and path
+// const outputPath = './gpx_array.json'; // You can change the filename and path
 // const DEFAULT_GPX = path.resolve(process.cwd(), "../coop_towpath_wpt.gpx");
-const filePath = path.resolve(__dirname, '../coop_towpath_wpt.gpx');
+const [,, inputPath, outputPath] = process.argv;
+// const inputPath = path.resolve(__dirname, '../coop_towpath_wpt.gpx');
 function ensureArray<T>(v: T | T[] | undefined): T[] {
   if (v === undefined) return [];
   return Array.isArray(v) ? v : [v];
@@ -16,7 +17,7 @@ function ensureArray<T>(v: T | T[] | undefined): T[] {
 async function main() {
   // const gpxPath = process.env.GPX_FILE ?? process.argv[2] ?? DEFAULT_GPX;
   // const xml = await readFile(gpxPath, "utf8");
-  const xml = await readFile(filePath, 'utf-8');
+  const xml = await readFile(inputPath, 'utf-8');
 
   const parser = new XMLParser({
     ignoreAttributes: false,
