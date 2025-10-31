@@ -46,10 +46,13 @@ function dedupePoints<T extends { '@_lat': string | number; '@_lon': string | nu
       if (typeof tv === 'string') timeVal = tv;
       else if (tv && typeof tv === 'object' && '#text' in tv) timeVal = (tv as any)['#text'];
     }
-    const key = pointKey(p['@_lat'], p['@_lon'], timeVal);
+    const key = pointKey(p['@_lat'], p['@_lon']);
     if (!seen.has(key)) {
       seen.add(key);
       out.push(p);
+    }
+    else {
+      console.log('Duplicate point skipped:', key);
     }
   }
   return out;
