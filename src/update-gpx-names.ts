@@ -1,6 +1,8 @@
 import { readFile, writeFile } from 'fs/promises';
 import { parseStringPromise, Builder } from 'xml2js';
 
+const [,, inputPath, outputPath] = process.argv;
+
 async function updateWaypointNames(inputPath: string, outputPath: string) {
   const xml = await readFile(inputPath, 'utf-8');
   const gpx = await parseStringPromise(xml);
@@ -20,4 +22,4 @@ async function updateWaypointNames(inputPath: string, outputPath: string) {
   console.log(`✅ Updated GPX saved to ${outputPath}`);
 }
 
-updateWaypointNames('./coop_towpath_wpt.gpx', './updated_waypoints.gpx');
+updateWaypointNames(inputPath, outputPath);
