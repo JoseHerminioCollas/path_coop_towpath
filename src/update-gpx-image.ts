@@ -260,7 +260,7 @@ const counts = gpxPoints.map(p => p[1]);
       w.link = imgsForWpt.map(name => ({ "@_href": absPath + name }));
       w.desc = {
         "__cdata": imgsForWpt
-          .map(name => `<img src="${absPath + name}" width="309"/>`)
+          .map(name => `<img src="${absPath + name}" width="309" height="232"/>`)
           .join("\n")
       };
       console.log(`Assigned ${imgsForWpt.length} images [${imgsForWpt.join(", ")}] → waypoint[${i}]`);

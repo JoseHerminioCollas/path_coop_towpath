@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://www.delorme.com" xmlns="http://www.topografix.com/GPX/1/1">
   <wpt lat="41.489762" lon="-81.701457">
     <ele>171.4</ele>
@@ -15,8 +14,8 @@
     <time>2025-09-29T18:11:01Z</time>
     <name>2025-09-29T18:11:01Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0050.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0051.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0050.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0051.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0050.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0051.JPG"></link>
@@ -62,8 +61,8 @@
     <time>2025-09-29T18:17:45Z</time>
     <name>2025-09-29T18:17:45Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0056.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0057.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0056.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0057.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0056.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0057.JPG"></link>
@@ -82,8 +81,8 @@
     <time>2025-09-29T18:20:08Z</time>
     <name>2025-09-29T18:20:08Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0059.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0060.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0059.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0060.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0059.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0060.JPG"></link>
@@ -102,8 +101,8 @@
     <time>2025-09-29T18:22:45Z</time>
     <name>2025-09-29T18:22:45Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0062.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0063.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0062.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0063.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0062.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0063.JPG"></link>
@@ -113,8 +112,8 @@
     <time>2025-09-29T18:25:51Z</time>
     <name>2025-09-29T18:25:51Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0064.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0065.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0064.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0065.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0064.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0065.JPG"></link>
@@ -124,9 +123,9 @@
     <time>2025-09-29T18:27:08Z</time>
     <name>2025-09-29T18:27:08Z</name>
     <desc>
-      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0066.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0067.JPG" width="309"/>
-<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0068.JPG" width="309"/>]]>
+      <![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0066.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0067.JPG" width="309" height="232"/>
+<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0068.JPG" width="309" height="232"/>]]>
     </desc>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0066.JPG"></link>
     <link href="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0067.JPG"></link>
