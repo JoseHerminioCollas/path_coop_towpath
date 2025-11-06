@@ -61,7 +61,6 @@ async function main() {
   // parse IMAGE_COUNTS env var (JSON like "[1,2,3]" or CSV "1,2,3")
   const countsEnv = process.env.IMAGE_COUNTS;
   // let counts: number[] | null = null;
-  // 1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3,
   const gpxPoints: Array<[string, number]> = [
   [
     "2025-09-29T18:09:35Z",
@@ -69,7 +68,7 @@ async function main() {
   ],
   [
     "2025-09-29T18:11:01Z",
-    1
+    2
   ],
   [
     "2025-09-29T18:11:52Z",
@@ -89,7 +88,7 @@ async function main() {
   ],
   [
     "2025-09-29T18:17:45Z",
-    1
+    2
   ],
   [
     "2025-09-29T18:18:50Z",
@@ -97,7 +96,7 @@ async function main() {
   ],
   [
     "2025-09-29T18:20:08Z",
-    1
+    2
   ],
   [
     "2025-09-29T18:21:25Z",
@@ -105,15 +104,15 @@ async function main() {
   ],
   [
     "2025-09-29T18:22:45Z",
-    1
+    2
   ],
   [
     "2025-09-29T18:25:51Z",
-    1
+    2
   ],
   [
     "2025-09-29T18:27:08Z",
-    1
+    3
   ],
   [
     "2025-09-29T18:29:22Z",
@@ -213,8 +212,6 @@ async function main() {
   ]
 ];
 const counts = gpxPoints.map(p => p[1]);
-  // counts = [1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,];
-  //2:22
   // how many images per waypoint
   // const a = [['2:22', 1]]
   // if (countsEnv) {
@@ -256,7 +253,7 @@ const counts = gpxPoints.map(p => p[1]);
     if (imgsForWpt.length === 1) {
       const rel = absPath + imgsForWpt[0];
       w.link = { "@_href": rel };
-      w.desc = { "__cdata": `<img src="${rel}" width="309"/>` };
+      w.desc = { "__cdata": `<img src="${rel}" width="309" height="232"/>` };
       console.log(`Assigned image ${imgsForWpt[0]} → waypoint[${i}]`);
     } else {
       // multiple links and combined CDATA description with multiple <img> tags

@@ -1,0 +1,1 @@
+npx ts-node src/convert-gpx-to-kml.ts coop_towpath_wpt-30.gpx coop_towpath_wpt-30.kml
