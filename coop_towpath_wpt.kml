@@ -9,14 +9,18 @@
                     <href>https://maps.google.com/mapfiles/kml/pal4/icon38.png</href>
                 </Icon>
             </IconStyle>
+            <LabelStyle>
+                <scale>0</scale> <!-- This hides the name on the map -->
+            </LabelStyle>
         </Style>
-        <name>coop_towpath_wpt.kml</name>
+        <name>coop towpath wpt</name>
         <Placemark>
             <TimeStamp>
                 <when>2025-09-29T18:09:35Z</when>
             </TimeStamp>
             <description><![CDATA[<img src="https://joseherminiocollas.github.io/path_coop_towpath/images/DSCN0048.JPG" width="309" height="232"/>]]></description>
             <styleUrl>#customIconStyle</styleUrl>
+            <name>-81.701457,41.489762,171.4</name>
             <Point>
                 <coordinates>-81.701457,41.489762,171.4</coordinates>
             </Point>
