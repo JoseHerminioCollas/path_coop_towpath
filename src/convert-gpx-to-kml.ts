@@ -5,7 +5,7 @@ import { exit } from "process";
 
 // const DEFAULT_GPX = path.resolve(process.cwd(), "coop_towpath_wpt-30.gpx");
 // const OUTPUT_KML = path.resolve(process.cwd(), "coop_towpath_wpt-30.kml");
-const [, , DEFAULT_GPX, OUTPUT_KML] = process.argv;
+const [, , DEFAULT_GPX, OUTPUT_KML, fileName] = process.argv;
 
 function ensureArray<T>(v: T | T[] | undefined): T[] {
   if (v === undefined) return [];
@@ -31,13 +31,22 @@ async function main() {
   kmlParts.push('<?xml version="1.0" encoding="UTF-8"?>');
   kmlParts.push('<kml xmlns="http://www.opengis.net/kml/2.2">');
   kmlParts.push('<Document>');
-  kmlParts.push(`<name>${path.basename(OUTPUT_KML)}</name>`);
-
+  kmlParts.push(`<name>${fileName}</name>`);
+  // Define a style with a custom icon
+  kmlParts.push('<Style id="cameraIcon">');
+  kmlParts.push('<IconStyle>');
+  kmlParts.push('<scale>0.9</scale>');
+  kmlParts.push('<Icon>');
+  kmlParts.push('<href>https://goatstone.com/map_icons/camera.png</href>');
+  kmlParts.push('</Icon>');
+  kmlParts.push('</IconStyle>');
+  kmlParts.push('</Style>');
   for (const w of wpts) {
     const lat = w["@_lat"];
     const lon = w["@_lon"];
     if (!lat || !lon) continue;
-    const name = w.name && (typeof w.name === "string" ? w.name : "");
+    const elePart = w.ele ? `,${w.ele}` : "";
+    const coords_elevation = `${lon},${lat}${elePart}`;
     const when = w.time && (typeof w.time === "string" ? w.time : (w.time.when || ""));
     let desc = "";
     if (w.desc) {
@@ -49,11 +58,11 @@ async function main() {
     }
 
     kmlParts.push("<Placemark>");
-    if (name) kmlParts.push(`<name>${escapeXml(name)}</name>`);
+    if (coords_elevation) kmlParts.push(`<name>${coords_elevation}</name>`);
     if (when) kmlParts.push("<TimeStamp><when>" + escapeXml(when) + "</when></TimeStamp>");
     if (desc) kmlParts.push(`<description><![CDATA[${desc}]]></description>`);
-    const elePart = w.ele ? `,${w.ele}` : "";
-    kmlParts.push(`<Point><coordinates>${lon},${lat}${elePart}</coordinates></Point>`);
+    kmlParts.push("<styleUrl>#cameraIcon</styleUrl>");
+    kmlParts.push(`<Point><coordinates>${coords_elevation}</coordinates></Point>`);
     kmlParts.push("</Placemark>");
   }
 
