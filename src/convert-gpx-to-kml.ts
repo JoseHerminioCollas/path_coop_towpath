@@ -40,6 +40,9 @@ async function main() {
   kmlParts.push('<href>https://goatstone.com/map_icons/camera.png</href>');
   kmlParts.push('</Icon>');
   kmlParts.push('</IconStyle>');
+  kmlParts.push('<LabelStyle>');
+  kmlParts.push('<scale>0.0</scale>'); // Hide labels
+  kmlParts.push('</LabelStyle>');
   kmlParts.push('</Style>');
   for (const w of wpts) {
     const lat = w["@_lat"];
