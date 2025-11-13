@@ -3,7 +3,7 @@
     <Document>
         <Style id="customIconStyle">
             <IconStyle>
-                <scale>0.75</scale>
+                <scale>0.9</scale>
                 <Icon>
                     <!-- Use the full web URL here -->
                     <href>https://goatstone.com/map_icons/camera.png</href>
